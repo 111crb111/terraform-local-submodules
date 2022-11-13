@@ -39,6 +39,10 @@ resource "null_resource" "resource4" {
   }
 }
 
+module "submodule1" {
+  source = "./modules/submodule1"
+}
+
 output "test_output" {
-  value = "test output value"
+  value = submodule1.hello
 }
