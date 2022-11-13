@@ -39,6 +39,6 @@ resource "null_resource" "resource4" {
   }
 }
 
-output "test_output" {
-  value = "test output value"
+output "hello" {
+  value = "Hello from submodule1"
 }
