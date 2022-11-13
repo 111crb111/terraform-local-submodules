@@ -44,5 +44,5 @@ module "submodule1" {
 }
 
 output "test_output" {
-  value = submodule1.hello
+  value = module.submodule1.hello
 }
